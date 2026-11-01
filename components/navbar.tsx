@@ -20,18 +20,18 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex shrink-0 items-center">
-          <Image
-            src="/car.png"
-            alt="CARS City Auto Rentals & Services"
-            width={220}
-            height={74}
-            priority
-            className="h-auto max-h-16 w-auto object-contain"
-          />
-        </Link>
+   <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+  <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
+    <Link href="/" className="flex shrink-0 items-center">
+      <Image
+        src="/car.png"
+        alt="CARS City Auto Rentals & Services"
+        width={800}
+        height={280}
+        priority
+        className="!h-48 !w-auto max-w-none object-contain"
+      />
+    </Link>
 
         <div className="hidden items-center gap-5 xl:flex">
           {links.map((link) => (

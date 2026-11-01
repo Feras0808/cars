@@ -16,17 +16,18 @@ const footerLinks = [
 export default function Footer() {
   return (
     <footer className="bg-[#0b223b] text-white">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-14 md:grid-cols-2 lg:grid-cols-3 lg:px-8">
-        <div>
-          <Link href="/" className="inline-block">
-            <Image
-              src="/car.png"
-              alt="CARS City Auto Rentals & Services"
-              width={220}
-              height={74}
-              className="h-auto max-h-16 w-auto object-contain"
-            />
-          </Link>
+  <div className="mx-auto grid max-w-7xl gap-12 px-6 py-14 md:grid-cols-2 lg:grid-cols-3 lg:px-8">
+    <div>
+      <Link href="/" className="inline-block">
+        <Image
+          src="/car.png"
+          alt="CARS City Auto Rentals & Services"
+          width={500}
+          height={175}
+          priority
+          className="!h-24 !w-auto max-w-none object-contain"
+        />
+      </Link>
 
           <p className="mt-5 max-w-sm text-sm leading-7 text-slate-300">
             Flexible vehicle rental and leasing solutions for businesses,
